@@ -56,6 +56,6 @@ io.on('connection',function(socket){
     );
 });
 
-http.listen(9000, function () {
-    console.log('listening on *:9000');
+http.listen(80, function () {
+    console.log('listening on *:80');
 });
