@@ -3,8 +3,8 @@
     <div class="system-notification" ng-switch-when="welcome"><strong>系統:&nbsp;&nbsp;</strong><span>{{info.text}}</span>上線囉!
     </div>
     <!-- Off line -->
-    <div class="system-notification" ng-switch-when="bye"><strong>系统:&nbsp;&nbsp;</strong>byebye,
-        <span>{{info.text}}</span></div>
+    <div class="system-notification" ng-switch-when="bye"><strong>系统:&nbsp;&nbsp;</strong>
+        <span>{{info.text}}</span>, 已中離~</div>
     <!-- common -->
     <div class="normal-message" ng-class="{others:self!==info.from,self:self===info.from}" ng-switch-when="normal">
         <div class="name-wrapper"><span>{{info.from}} @ </span><span>{{time |  date: 'HH:mm:ss' }}</span></div>
